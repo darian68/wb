@@ -386,7 +386,7 @@ UTF8Encode = function (b) {
       modal: true,
       title: 'Region settings',
       width: 500,
-      closeText: 'colose',
+      closeText: 'Close',
       buttons: {
         Apply: function () {
           dexp_current_region.removeClass('col-xs-1 col-xs-2 col-xs-3 col-xs-4 col-xs-5 col-xs-6 col-xs-7 col-xs-8 col-xs-9 col-xs-10 col-xs-11 col-xs-12');
