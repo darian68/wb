@@ -198,18 +198,18 @@ function drbase_enqueue_script($hook) {
     wp_enqueue_style( 'drbase-bootstrap-style', get_bloginfo('template_directory') . '/css/bootstrap.css');
     wp_enqueue_style( 'drbase-font-awesome-style', get_bloginfo('template_directory') .'/fonts/font-awesome/css/font-awesome.min.css');
     wp_enqueue_style( 'drbase-admin-style', get_bloginfo('template_directory') . '/css/admin.drbase.css');
-    wp_enqueue_style( 'jquery-ui-dialog-style', '/wp-includes/css/jquery-ui-dialog.css');
-    //wp_enqueue_style( 'ui.button.style', '/wp-includes/css/jquery-ui-button.css');
+    wp_enqueue_style( 'wp-jquery-ui-dialog');//, '/wp-includes/css/jquery-ui-dialog.css');
+    wp_enqueue_style( 'wp-jquery-ui-button');//, '/wp-includes/css/jquery-ui-button.css');
     
-    wp_enqueue_script( 'jquery-ui-core', '/wp-includes/js/jquery/ui/core.min.js', true);
-    wp_enqueue_script( 'jquery-ui-widget', '/wp-includes/js/jquery/ui/widget.min.js', true);
-    wp_enqueue_script( 'jquery-ui-mouse', '/wp-includes/js/jquery/ui/mouse.min.js', true);
-    wp_enqueue_script( 'jquery-ui-draggable', '/wp-includes/js/jquery/ui/draggable.min.js', true);
-    wp_enqueue_script( 'jquery-ui-dropable', '/wp-includes/js/jquery/ui/droppable.min.js' , true);
-    wp_enqueue_script( 'jquery-ui-sortable', '/wp-includes/js/jquery/ui/sortable.min.js' , true);
-    wp_enqueue_script( 'jquery-ui-dialog', '/wp-includes/js/jquery/ui/dialog.min.js' , true);
-    wp_enqueue_script( 'jquery-ui-button', '/wp-includes/js/jquery/ui/button.min.js' , true);
-    wp_enqueue_script( 'jquery-ui-position', '/wp-includes/js/jquery/ui/position.min.js' , true);
+    wp_enqueue_script( 'jquery-ui-core');//, '/wp-includes/js/jquery/ui/core.min.js', true);
+    wp_enqueue_script( 'jquery-ui-widget');//, '/wp-includes/js/jquery/ui/widget.min.js', true);
+    wp_enqueue_script( 'jquery-ui-mouse');//, '/wp-includes/js/jquery/ui/mouse.min.js', true);
+    wp_enqueue_script( 'jquery-ui-draggable');//, '/wp-includes/js/jquery/ui/draggable.min.js', true);
+    wp_enqueue_script( 'jquery-ui-dropable');//, '/wp-includes/js/jquery/ui/droppable.min.js' , true);
+    wp_enqueue_script( 'jquery-ui-sortable');//, '/wp-includes/js/jquery/ui/sortable.min.js' , true);
+    wp_enqueue_script( 'jquery-ui-dialog');//, '/wp-includes/js/jquery/ui/dialog.min.js' , true);
+    wp_enqueue_script( 'jquery-ui-button');//, '/wp-includes/js/jquery/ui/button.min.js' , true);
+    wp_enqueue_script( 'jquery-ui-position');//, '/wp-includes/js/jquery/ui/position.min.js' , true);
     wp_enqueue_script( 'drbase', get_bloginfo('template_directory') . '/js/templates_drag_drop.js', true);
 }
 add_action( 'admin_enqueue_scripts', 'drbase_enqueue_script' );
