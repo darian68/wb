@@ -199,7 +199,7 @@ function drbase_enqueue_script($hook) {
     wp_enqueue_style( 'drbase-font-awesome-style', get_bloginfo('template_directory') .'/fonts/font-awesome/css/font-awesome.min.css');
     wp_enqueue_style( 'drbase-admin-style', get_bloginfo('template_directory') . '/css/admin.drbase.css');
     wp_enqueue_style( 'wp-jquery-ui-dialog');//, '/wp-includes/css/jquery-ui-dialog.css');
-    wp_enqueue_style( 'wp-jquery-ui-button');//, '/wp-includes/css/jquery-ui-button.css');
+    //wp_enqueue_style( 'wp-jquery-ui-button');//, '/wp-includes/css/jquery-ui-button.css');
     
     wp_enqueue_script( 'jquery-ui-core');//, '/wp-includes/js/jquery/ui/core.min.js', true);
     wp_enqueue_script( 'jquery-ui-widget');//, '/wp-includes/js/jquery/ui/widget.min.js', true);

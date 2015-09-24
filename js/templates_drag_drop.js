@@ -385,7 +385,7 @@ UTF8Encode = function (b) {
       autoOpen: false,
       modal: true,
       title: 'Region settings',
-      width: 500,
+      width: 535,
       closeText: 'Close',
       buttons: {
         Apply: function () {
